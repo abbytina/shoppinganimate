@@ -1,0 +1,447 @@
+
+/* 导航颜色 */
+
+#fp-nav ul li a span {
+    background-color: red;
+}
+/* 往下更多精彩 图片按钮 */
+.nextSection{
+    /* 标签-有大小 不显示
+    1 透明度
+    2 层级 */
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 2;
+    animation: nextSection_ani 1s infinite alternate linear;
+}
+@keyframes nextSection_ani {
+    0% {}
+    100% {
+        transform: translateY(20%);
+    }
+}
+
+/* 第一屏开始 */
+
+.s1 {
+    position: relative;
+    background: url("../images/t1fpyqfltdxxaiulhh-990-600.png") no-repeat center bottom #f9dd67;
+}
+
+
+/* 版心 */
+
+.section_content {
+    width: 1000px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #000;
+}
+
+
+/* 泡泡 */
+
+.s1_paopao {
+    position: absolute;
+    left: 8%;
+    bottom: 160px;
+}
+
+
+/* 飞船 */
+
+.s1_airship {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    animation: ani_updown 2s infinite alternate linear;
+    /* 动画名 */
+    /* animation-name: ani_updown; */
+    /* 持续时间 */
+    /* animation-duration: 1s; */
+    /* 循环次数 */
+    /* animation-iteration-count: infinite; */
+    /* 动画的方向 alternate 先正再反 */
+    /* animation-direction:alternate; */
+    /* 速度曲线 linear 匀速  */
+    /* animation-timing-function:linear; */
+}
+
+
+/* 声明动画 */
+
+@keyframes ani_updown {
+    0% {}
+    100% {
+        transform: translateY(50%);
+    }
+}
+
+.s1_sofa {
+    position: absolute;
+    left: 28%;
+    bottom: 48%;
+    animation: ani_updown 2s infinite linear alternate;
+}
+
+
+/* 第一屏结束 */
+
+
+/* 第二屏开始 */
+
+.s2 {
+    position: relative;
+    background: url("../images/t1zdgpfi8exxca6rfn-2000-600.png") center bottom no-repeat #84a2d4;
+}
+
+
+/* 没有文字的搜索框 */
+
+.s2_search_empty {
+    position: absolute;
+    right: -15%;
+    bottom: 300px;
+}
+
+
+/* 沙发文字 */
+
+.s2_sf_font {
+    position: absolute;
+    bottom: 310px;
+    left: 55%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+
+/* 带上沙发的文字 */
+
+.s2_search_full {
+    position: absolute;
+    /* opacity: .3; */
+    bottom: 300px;
+    left: 39.1%;
+    display: none;
+}
+
+
+/* 带有多个沙发的图片 */
+
+.s2_sfs {
+    position: absolute;
+    width: 150px;
+    right: 28%;
+    bottom: 210px;
+    display: none;
+}
+
+
+/* 文字提示 */
+
+.s2_title1,
+.s2_title2 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.s2_title2 {
+    display: none;
+}
+
+.s2_wrap {
+    position: absolute;
+    bottom: 321px;
+    left: 39%;
+    background-color: #fff;
+    width: 108px;
+    height: 108px;
+    display: none;
+}
+
+
+/* 第二屏结束 */
+
+
+/* 第三屏开始 */
+
+.s3 {
+    position: relative;
+    background: url("../images/main.png") center bottom no-repeat #ef674d;
+}
+
+.s3_sf {
+    position: absolute;
+    bottom: 146%;
+    left: 39%;
+    width: 103px;
+    display: none;
+}
+
+.s3_black_size,
+.s3_white_size {
+    position: absolute;
+    right: 16%;
+    bottom: 25%;
+    /* transform: translateX(-50%); */
+}
+
+.s3_white_size {
+    display: none;
+}
+
+.s3_black_car,
+.s3_white_car {
+    position: absolute;
+    bottom: 10%;
+    right: 23.5%;
+}
+
+.s3_white_car {
+    display: none;
+}
+
+
+/* 第三屏结束 */
+
+
+/* 第四屏开始 */
+
+.s4 {
+    position: relative;
+    background: url("../images/t1iresfnxaxxca6rfn-2000-600.png") center bottom no-repeat #ffeedd;
+}
+
+.s4_full_car {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+.s4_qx_sf {
+    position: absolute;
+    z-index: -1;
+    left: 34%;
+    /* 倾斜的沙发掉出屏幕的外边  */
+    bottom: -248px;
+}
+.s4_cloud{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    animation: ani_s4_cloud 6s infinite alternate linear;
+}
+@keyframes ani_s4_cloud {
+    from {}
+    to {
+        transform: translateX(10%);
+    }
+}
+.s4_title1,.s4_title2{
+    position: absolute;
+    top:25%;
+    left: 55px;
+    transform: translateX(50%);
+}
+.s4_title2{
+    display: none;
+}
+.s4_adress{
+    position: absolute;
+    left: 50%;
+    bottom: 190px;
+    transform: translateX(-50%);
+    display: none;
+}
+.s4_adress_name{
+    position: absolute;
+    left: 29%;
+    top:60px;
+}
+/* 第四屏结束 */
+
+/* 第五屏开始 */
+.s5 {
+    position: relative;
+    background: url("../images/t1yisqfa4exxa3gmkg-2000-1500.png") no-repeat;
+    overflow: hidden;
+}
+.s5_bank_card{
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+}
+.s5_mouse,.s5_mouse02{
+    position: absolute;
+    right: 44px;
+    bottom: 220px;
+}
+.s5_mouse02{
+    display: none;
+}
+.s5_hand{
+    position: absolute;
+    bottom: -375px;
+    right: 89px;
+}
+.s5_sf {
+    position: absolute;
+    left: 40px;
+    /* bottom: 15%; */
+    bottom: 96%;
+}
+.s5_bill{
+    position: absolute;
+    position: absolute;
+    left: 100px;
+    bottom: 43%;
+    /* left: 100px;
+    bottom: 63%; */
+}
+.s5_title1{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    transition:all 1s;
+    opacity: 0;
+}
+.s5 .section_content {
+    perspective: 1000px;
+}
+.s5_title_rotate {
+    /* 
+    translateZ 要搭配 视距
+    perspective 要给父元素加上
+     */
+    transform: rotate(360deg) translateZ(110px);
+    opacity: 1;
+}
+/* 第五屏结束 */
+
+/* 第六屏开始 */
+.s6{
+    background: url("../images/t1dvj.fn0gxxb0_fua-2500-600.png") no-repeat 25% 100% #85d9ed;
+}
+.s6_sf_move{
+    position: absolute;
+    bottom: 115%;
+    left: 16%;
+    display: none;
+}
+.s6_box{
+    position: absolute;
+    bottom: 70%;
+    left: 5%;
+}
+.s6_car{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+.s6_title1{
+    position: absolute;
+    top: 15%;
+    left: -308px;
+}
+.s6_zy88{
+    position: absolute;
+    bottom: 15%;
+    left: 39%;
+    display: none;
+}
+.s6_boys{
+    position: absolute;
+    bottom: 30px;
+    left: 36%;
+    width: 59px;
+}
+.s6_door {
+    position: absolute;
+    bottom: 116px;
+    right: 285px;
+    display: none;
+}
+.s6_girl {
+    position: absolute;
+    right: 299px;
+    bottom: 115px;
+    width: 30px;
+    display: none;
+}
+.s6_recive{
+    position: absolute;
+    bottom: 61%;
+    right: 34%;
+    display: none;
+}
+/* 云 */
+.s6_cloud {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+/* 第六屏结束 */
+
+/* 第七屏开始 */
+.s7{
+    background: url("../images/t1wf1tfctaxxa3gmkg-2000-1500.png") center bottom no-repeat; 
+}
+.s7_star {
+    position: absolute;
+    top: 36%;
+    left: 20.2%;
+    height: 20px;
+    background-image: url(../images/star.png);
+    background-size: 102px 18px;
+    background-repeat: no-repeat;
+    width: 0;
+}
+.s7_good_comment {
+    position: absolute;
+    top: 39%;
+    left: 22%;
+    display: none;
+}
+/* 第七屏结束 */
+/* 第八屏开始 */
+.s8 {
+    background: url("../images/ksgw.png");
+}
+.s8_begin_shop{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 389px;
+    height: 160px;
+}
+.s8_begin_shop>img{
+    position: absolute;
+    top: 0;
+}
+.s8_shop_gif{
+    display: none;
+}
+.s8_begin_shop:hover .s8_shop_gif{
+    display: block;
+}
+.s8_begin_shop:hover .s8_shop_png{
+    display: none;
+}
+.s8_again{
+    position: absolute;
+    bottom: 54%;
+    right: 16%;
+}
+.s8_hand{
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+}
+/* 第八屏结束 */
